@@ -1,0 +1,9 @@
+<div class="content">
+    <label for="email">Email ID</label>
+    <input type="text" id="email" [formControl]="email">
+    <button (click)="validate()">Validate</button>
+
+    EMAIL IS: {{email.value}}
+    <br>
+    MESSAGE IS: {{message}}
+</div>

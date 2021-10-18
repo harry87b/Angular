@@ -1,0 +1,60 @@
+<div class="content">
+    
+    <div class="mb-3">
+       
+        FORM DATA:
+        <br>
+        Email:{{authForm.value.email | json}} <br>
+        Password:{{authForm.value.password | json}}
+
+    </div>
+
+    <div id="carouselExampleControls" class="carousel slide" data-interval="false" >
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="card" style="width: 50rem;">
+                
+                    <div class="card-body">
+                        <form [formGroup]="authForm" (ngSubmit)="registerUser()">
+                            <h1>Register</h1>
+                            <label for="email" class="form-label">Email</label>
+                            <input type="text" class="form-control" id="email" placeholder="john@example.com" formControlName="email">
+                            <br>
+                            <label for="password" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="password" placeholder="Min 6 Characters"
+                                formControlName="password">
+                            <br>
+                            <!-- <button (click)="registerUser()">Register</button> -->
+                            <button type="submit" class="btn btn-dark">Register</button>
+                        </form> <br>
+                        <a class="carousel-control-next" data-bs-target="#carouselExampleControls" type="button" data-bs-slide="next" class="btn abc btn-primary">Already a Member ! Sign IN</a>
+                    </div>
+                
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="card" style="width: 50rem;">
+                
+                    <div class="card-body">
+                        <form [formGroup]="authForm" (ngSubmit)="signInUser()">
+                            <h1>Sign-In</h1>
+                            <label for="email" class="form-label">Email</label>
+                            <input type="text" class="form-control" id="email" placeholder="john@example.com" formControlName="email">
+                            <br>
+                            <label for="password" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="password" placeholder="Min 6 Characters"
+                                formControlName="password">
+                            <br>
+                            <!-- <button (click)="registerUser()">Register</button> -->
+                            <button type="submit" class="btn btn-dark">Log-In</button>
+                        </form> <br>
+                        <a class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev" class="btn abc btn-primary">Don't have a account! Register Here</a>
+                    </div>
+                
+                </div>
+            </div>
+            
+        </div>
+        
+    </div>
+</div>

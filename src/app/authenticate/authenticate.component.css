@@ -1,0 +1,20 @@
+
+.btn{
+    margin-left: 40%;
+}
+.abc{
+    margin-left: 25%;
+}
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    height: 45px;
+    width: 50px;
+    outline: black;
+    background-color: rgba(2, 2, 2, 0.3);
+    /* background-size: 100%, 100%; */
+    
+    border-radius: 20%;
+    border: 3px solid black;
+}
+.card{
+    padding: 15%;
+}

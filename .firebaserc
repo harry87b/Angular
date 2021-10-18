@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "fsd2021-dc073"
+  },
+  "targets": {
+    "fsd2021-dc073": {
+      "hosting": {
+        "fsd2021angular": [
+          "fsd2021-dc073"
+        ]
+      }
+    }
+  }
+}

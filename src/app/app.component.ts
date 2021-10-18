@@ -7,4 +7,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'fsd2021angular';
+
+  profile = {
+    name:"Harmilap",
+    lastName:"Singh",
+    age:21
+    
+  }
+
+
 }
+

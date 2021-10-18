@@ -1,0 +1,7 @@
+img{
+    padding: 1%;
+    width: 100%;
+}
+img:hover{
+    zoom: 110%;
+}
